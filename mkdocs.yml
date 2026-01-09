@@ -1,0 +1,13 @@
+site_name: Docs Portal Demo
+site_url: https://52-git.github.io/demo-docs-portal/
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Frontend:
+      - Overview: frontend/index.md
+  - Backend:
+      - Overview: backend/index.md
+  - Infra:
+      - Overview: infra/index.md
