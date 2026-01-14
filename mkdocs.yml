@@ -1,13 +1,35 @@
 site_name: Docs Portal Demo
-site_url: https://52-git.github.io/demo-docs-portal/
+docs_dir: docs
+
 theme:
   name: material
 
+# Navigation
 nav:
-  - Home: index.md
-  - Frontend:
-      - Overview: frontend/index.md
-  - Backend:
-      - Overview: backend/index.md
-  - Infra:
-      - Overview: infra/index.md
+  # - Home: index.md
+  # - Frontend:
+  #     - Overview: frontend/index.md
+  # - Backend:
+  #     - Overview: backend/index.md
+  # - Infra:
+  #     - Overview: infra/index.md
+  - ホーム: index.md
+  - フロントエンド:
+      - 概要: frontend/README.md
+      - 全体構成: frontend/src/README.md
+      - チャット管理: frontend/src/chat/README.md
+      - 認証情報: frontend/src/auth/README.md
+      - 画面一覧: frontend/src/pages/README.md
+      - 共通レイアウト: frontend/src/layout/README.md
+      - 共通フック: frontend/src/hooks/README.md
+
+  # - バックエンド:
+  #     - 概要: backend/README.md
+  #     - 全体構成: backend/app/README.md
+  #     - REST API概要: backend/app/api/README.md
+  #     - LLM連携: backend/app/integrations/README.md
+  #     - DDBリポジトリ: backend/app/repositories/README.md
+  #     - サービス: backend/app/services/README.md
+  #     - タスク: backend/app/tasks/README.md
+
+copyright: Copyright © 2026 - 2040 - Classmethod, Inc.
