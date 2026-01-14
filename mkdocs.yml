@@ -32,6 +32,6 @@ nav:
       - サービス: backend/app/services/README.md
       - タスク: backend/app/tasks/README.md
 
-  - インフラ:      
+  # - インフラ:      
 
 copyright: Copyright © 2026 - 2040 - Classmethod, Inc.
