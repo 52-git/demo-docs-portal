@@ -14,6 +14,7 @@ nav:
   # - Infra:
   #     - Overview: infra/index.md
   - ホーム: index.md
+  - 版本选择: versions.md
   - フロントエンド:
       - 概要: frontend/README.md
       - 全体構成: frontend/src/README.md

@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - pip3 install mkdocs-material
+    build:
+      commands:
+        - mkdocs build --clean
+  artifacts:
+    baseDirectory: site
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - ~/.cache/pip

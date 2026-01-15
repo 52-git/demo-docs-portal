@@ -1,0 +1,60 @@
+name: Aggregate Release Docs
+
+on:
+  push:
+    branches:
+      - 'release/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  aggregate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Load release versions
+        run: |
+          if [ ! -f .release-versions.env ]; then
+            echo "Missing .release-versions.env" >&2
+            exit 1
+          fi
+          set -a
+          . ./.release-versions.env
+          set +a
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> "$GITHUB_ENV"
+          echo "FRONTEND_VERSION=$FRONTEND_VERSION" >> "$GITHUB_ENV"
+          echo "BACKEND_VERSION=$BACKEND_VERSION" >> "$GITHUB_ENV"
+          echo "INFRA_VERSION=$INFRA_VERSION" >> "$GITHUB_ENV"
+
+      - name: Aggregate docs
+        run: |
+          ./tools/aggregate.sh \
+            --release-version "$RELEASE_VERSION" \
+            --frontend-version "$FRONTEND_VERSION" \
+            --backend-version "$BACKEND_VERSION" \
+            --infra-version "$INFRA_VERSION" \
+            --require-tags true
+
+      - name: Validate mkdocs
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install mkdocs-material
+          mkdocs build --strict
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ${{ github.ref_name }}
+          base: main
+          commit-message: "docs: aggregate ${{ env.RELEASE_VERSION }}"
+          title: "docs: aggregate ${{ env.RELEASE_VERSION }}"
+          body: |
+            Automated aggregation for release `${{ env.RELEASE_VERSION }}`.
+            - demo-frontend: `${{ env.FRONTEND_VERSION }}`
+            - demo-backend: `${{ env.BACKEND_VERSION }}`
+            - demo-infra: `${{ env.INFRA_VERSION }}`
