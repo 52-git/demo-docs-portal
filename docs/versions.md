@@ -1,3 +1,5 @@
 # 版本选择
 
-尚未生成版本目录。请运行聚合脚本或等待 release/* 自动聚合。
+| Release | demo-frontend | demo-backend | demo-infra |
+| --- | --- | --- | --- |
+| [v1.0.0](releases/v1.0.0/index.md) | v1.0.0 | v1.0.0 | v1.0.0 |
