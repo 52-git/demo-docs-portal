@@ -8,32 +8,32 @@ theme:
 nav:
   # - Home: index.md
   # - Frontend:
-  #     - Overview: frontend/index.md
+  #     - Overview: releases/v1.0.0/frontend/index.md
   # - Backend:
-  #     - Overview: backend/index.md
+  #     - Overview: releases/v1.0.0/backend/index.md
   # - Infra:
-  #     - Overview: infra/index.md
+  #     - Overview: releases/v1.0.0/infra/index.md
   - ホーム: index.md
   - 版本选择: versions.md
   - フロントエンド:
-      - 概要: frontend/README.md
-      - 全体構成: frontend/src/README.md
-      - チャット管理: frontend/src/chat/README.md
-      - 認証情報: frontend/src/auth/README.md
-      - 画面一覧: frontend/src/pages/README.md
-      - 共通レイアウト: frontend/src/layout/README.md
-      - 共通フック: frontend/src/hooks/README.md
+      - 概要: releases/v1.0.0/frontend/README.md
+      - 全体構成: releases/v1.0.0/frontend/src/README.md
+      - チャット管理: releases/v1.0.0/frontend/src/chat/README.md
+      - 認証情報: releases/v1.0.0/frontend/src/auth/README.md
+      - 画面一覧: releases/v1.0.0/frontend/src/pages/README.md
+      - 共通レイアウト: releases/v1.0.0/frontend/src/layout/README.md
+      - 共通フック: releases/v1.0.0/frontend/src/hooks/README.md
 
   - バックエンド:
-      - 概要: backend/README.md
-      - 全体構成: backend/app/README.md
-      - REST API概要: backend/app/api/README.md
-      - LLM連携: backend/app/integrations/README.md
-      - DDBリポジトリ: backend/app/repositories/README.md
-      - サービス: backend/app/services/README.md
-      - タスク: backend/app/tasks/README.md
+      - 概要: releases/v1.0.0/backend/README.md
+      - 全体構成: releases/v1.0.0/backend/app/README.md
+      - REST API概要: releases/v1.0.0/backend/app/api/README.md
+      - LLM連携: releases/v1.0.0/backend/app/integrations/README.md
+      - DDBリポジトリ: releases/v1.0.0/backend/app/repositories/README.md
+      - サービス: releases/v1.0.0/backend/app/services/README.md
+      - タスク: releases/v1.0.0/backend/app/tasks/README.md
 
   - インフラ:     
-      - 概要: infra/README.md 
+      - 概要: releases/v1.0.0/infra/README.md 
 
 copyright: Copyright © 2026 - 2040 - Classmethod, Inc.
