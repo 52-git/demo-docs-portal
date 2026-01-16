@@ -1,0 +1,1368 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>unx-knowledge-backend - Docs Portal Demo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/version-select.css">
+    
+      <link rel="stylesheet" href="../../../assets/breadcrumbs.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unx-knowledge-backend" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Docs Portal Demo" class="md-header__button md-logo" aria-label="Docs Portal Demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs Portal Demo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              unx-knowledge-backend
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Docs Portal Demo" class="md-nav__button md-logo" aria-label="Docs Portal Demo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs Portal Demo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    フロントエンド
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    フロントエンド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全体構成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/chat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    チャット管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    認証情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    画面一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    共通レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/frontend/src/hooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    共通フック
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    バックエンド
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    バックエンド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全体構成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDBリポジトリ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    サービス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/backend/app/tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    タスク
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフラ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    インフラ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../v1.0.1/infra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概要
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要コンポーネント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要機能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データフロー（概要）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ディレクトリ構成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        README 索引
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API 概要
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API 概要">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フィードバック/継続
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バッチ/運用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teams-bot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teams Bot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restapiv1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REST（/api/v1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#socketio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Socket.IO イベント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        環境変数（主要）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="環境変数（主要）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コア
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DynamoDB テーブル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import_to_s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        取り込み（import_to_s3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3_to_dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        埋め込み（s3_to_dynamodb）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スケジューラ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-graph-bot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microsoft Graph / Bot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#knowledgeindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インデックス構築（KnowledgeIndex）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ローカル起動
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecr-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ECR への push（例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unx-knowledge-backend">unx-knowledge-backend</h1>
+<h2 id="_1">概要</h2>
+<p>企業内ナレッジ検索と対話を提供するバックエンドです。FastAPI + Socket.IO を中心に、DynamoDB/FAISS/S3/BEDROCK を組み合わせてナレッジの取り込み、ベクトル検索、回答生成、継続回答を提供します。</p>
+<h2 id="_2">主要コンポーネント</h2>
+<ul>
+<li>FastAPI: REST API とヘルスチェック。</li>
+<li>Socket.IO: ストリーミング回答、継続回答イベント。</li>
+<li>DynamoDB: ナレッジ・設定・ユーザー・フィードバック・ジョブ管理。</li>
+<li>S3: 取り込みナレッジの格納、ユーザー写真の保存。</li>
+<li>FAISS: 埋め込み検索インデックスの構築。</li>
+<li>Bedrock: 埋め込み生成（Titan Embed）。</li>
+<li>LLM: OpenAI / Anthropic Claude / Google Gemini をストリーミングで利用。</li>
+<li>APScheduler + DDB: ジョブ定義に基づくバックグラウンド実行。</li>
+</ul>
+<h2 id="_3">主要機能</h2>
+<ul>
+<li>チャット回答（Socket.IO）: 部署・レベル別ナレッジ検索、参照リンク、継続回答。</li>
+<li>Teams Bot 連携: Adaptive Card での回答、続きボタン。</li>
+<li>フィードバック: リアクション/コメント/継続回答の保存。</li>
+<li>管理 CRUD: 部署、管理者、外部サービス、回答エリア、外部接続、ナレッジソース。</li>
+<li>取り込みパイプライン: 外部ソースを S3 に同期 → 埋め込み生成 → DynamoDB へ登録。</li>
+<li>Microsoft Graph 連携: 社員情報と写真の同期。</li>
+<li>DDB スケジューラ: 取り込み/埋め込み/インデックス再読込を定期実行。</li>
+</ul>
+<h2 id="_4">データフロー（概要）</h2>
+<ol>
+<li><code>services/import_to_s3.py</code> が外部ソースを取得し S3 + DATA_TABLE を更新。</li>
+<li><code>services/s3_to_dynamodb.py</code> が S3 を走査して埋め込みを作成し EMBEDDING_TABLE へ登録。</li>
+<li><code>repositories/knowledge_index.py</code> が EMBEDDING_TABLE を読み込み FAISS を構築。</li>
+<li>Socket.IO で <code>chat</code> → ベクトル検索 → LLM 生成 → <code>partial</code>/<code>done</code> を送信。</li>
+<li>フィードバック/継続情報を FEEDBACK_TABLE / CHAT_CONTINUATION_TABLE に保存。</li>
+</ol>
+<h2 id="_5">ディレクトリ構成</h2>
+<ul>
+<li><code>app/main.py</code>: FastAPI + Socket.IO エントリ。ライフサイクルで各種カタログ/インデックスを初期化。</li>
+<li><code>app/api/</code>: REST API（管理系 CRUD、ユーザー、シークレット）。</li>
+<li><code>app/integrations/</code>: チャット連携（Socket.IO/Teams）と LLM クライアント。</li>
+<li><code>app/services/</code>: 取り込み・埋め込み・ユーザー同期。</li>
+<li><code>app/repositories/</code>: FAISS インデックス、DDB カタログ/ストア。</li>
+<li><code>app/tasks/</code>: DDB 駆動スケジューラ。</li>
+<li><code>app/utils/</code>: 共有ユーティリティ。</li>
+</ul>
+<h2 id="readme">README 索引</h2>
+<ul>
+<li><code>app/README.md</code>: バックエンド全体の構成と役割。</li>
+<li><code>app/api/README.md</code>: REST API の仕様とエンドポイント概要。</li>
+<li><code>app/integrations/README.md</code>: チャット/LLM 連携の実装概要。</li>
+<li><code>app/repositories/README.md</code>: 検索インデックスと DDB リポジトリ。</li>
+<li><code>app/services/README.md</code>: 取り込み・埋め込み・ユーザー同期の詳細。</li>
+<li><code>app/tasks/README.md</code>: DDB スケジューラの仕組み。</li>
+</ul>
+<h2 id="api">API 概要</h2>
+<h3 id="_6">基本</h3>
+<ul>
+<li><code>GET /healthz</code>: ヘルスチェック。</li>
+<li><code>GET /departments</code>: チャットで使う部署一覧（SOURCE_CONFIG_TABLE の <code>folder</code> 由来）。</li>
+<li><code>GET /models</code>: 利用可能モデル一覧。</li>
+</ul>
+<h3 id="_7">フィードバック/継続</h3>
+<ul>
+<li><code>POST /api/feedback/reaction</code>: いいね/バッド更新。</li>
+<li><code>POST /api/feedback/comment</code>: コメント追加。</li>
+<li><code>POST /api/feedback/continue</code>: 継続回答（HTTP 版）。</li>
+</ul>
+<h3 id="_8">バッチ/運用</h3>
+<ul>
+<li><code>POST /api/import_to_s3</code>: 外部ソース同期をバックグラウンド実行。</li>
+<li><code>POST /api/s3_to_dynamodb</code>: 埋め込み生成をバックグラウンド実行。</li>
+</ul>
+<h3 id="teams-bot">Teams Bot</h3>
+<ul>
+<li><code>POST /api/azure_chatbot</code>: Bot Framework 互換の webhook。</li>
+</ul>
+<h3 id="restapiv1">REST（<code>/api/v1</code>）</h3>
+<ul>
+<li><code>admins</code>: 管理者 CRUD。</li>
+<li><code>departments</code>: 部署 CRUD（DEPARTMENT_TABLE_NAME）。</li>
+<li><code>answer-areas</code>: 回答表示エリア CRUD。</li>
+<li><code>external-services</code>: 外部サービス CRUD。</li>
+<li><code>ext-resources</code>: 外部サービスリソース CRUD。</li>
+<li><code>ext-connections</code>: 外部サービス接続 CRUD（<code>/ext-connections/test</code> で接続テスト）。</li>
+<li><code>knowledge-sources</code>: ナレッジソース CRUD。</li>
+<li><code>users</code>: 一覧/詳細/同期/統計/写真。</li>
+<li><code>secrets</code>: Secrets Manager の CRUD。</li>
+</ul>
+<p>※ <code>GET</code> 一覧 API は <code>_page</code>/<code>_limit</code>/<code>_sort</code>/<code>_order</code> を受け取り、<code>X-Total-Count</code> を返します。</p>
+<h2 id="socketio">Socket.IO イベント</h2>
+<ul>
+<li><code>chat</code>: <code>{ query, dept, model }</code> を送信すると <code>partial</code> → <code>done</code> を受信。</li>
+<li><code>continue</code>: <code>{ feedback_id, level_key, cursor }</code> で継続回答。</li>
+</ul>
+<h2 id="_9">環境変数（主要）</h2>
+<h3 id="_10">コア</h3>
+<ul>
+<li><code>AWS_REGION</code></li>
+<li><code>DEFAULT_AI_MODEL</code></li>
+<li><code>SUPPORTED_AI_MODELS</code></li>
+<li><code>MAX_COMPLETION_TOKENS</code></li>
+<li><code>CORS_ALLOWED_ORIGINS</code></li>
+<li><code>CORS_SUPPORTS_CREDENTIALS</code></li>
+<li><code>CORS_EXPOSE_HEADERS</code></li>
+</ul>
+<h3 id="dynamodb">DynamoDB テーブル</h3>
+<ul>
+<li><code>SOURCE_CONFIG_TABLE</code>, <code>LEVEL_TABLE</code>, <code>DYNAMO_TABLE_NAME</code>, <code>IMPROVEMENT_TABLE_NAME</code></li>
+<li><code>FEEDBACK_TABLE_NAME</code>, <code>CHAT_CONTINUATION_TABLE_NAME</code></li>
+<li><code>DEPARTMENT_TABLE_NAME</code>, <code>ADMIN_TABLE_NAME</code>, <code>ANSWER_AREA_TABLE_NAME</code></li>
+<li><code>EXTERNAL_SERVICE_TABLE_NAME</code>, <code>EXT_RESOURCE_TABLE_NAME</code>, <code>EXT_CONNECTION_TABLE_NAME</code></li>
+<li><code>KNOWLEDGE_SOURCE_TABLE_NAME</code>, <code>USER_TABLE_NAME</code></li>
+<li><code>DATA_TABLE</code>, <code>TAG_TABLE</code>, <code>EMBEDDING_TABLE</code>, <code>JOBS_TABLE</code></li>
+</ul>
+<h3 id="s3">S3</h3>
+<ul>
+<li><code>S3_BUCKET</code></li>
+<li><code>USER_PHOTO_S3_BUCKET</code></li>
+</ul>
+<h3 id="import_to_s3">取り込み（import_to_s3）</h3>
+<ul>
+<li><code>LOG_LEVEL</code>, <code>GITHUB_TOKEN</code>, <code>BACKLOG_SPACE</code>, <code>BACKLOG_API_KEY</code></li>
+</ul>
+<h3 id="s3_to_dynamodb">埋め込み（s3_to_dynamodb）</h3>
+<ul>
+<li><code>MODEL_NAME</code>, <code>CH_MAX</code>, <code>CH_MIN</code>, <code>SENT_OVERLAP</code></li>
+<li><code>MICRO_WINDOW</code>, <code>MICRO_STRIDE</code></li>
+<li><code>MAX_FILE_MB</code>, <code>MAX_WORKERS</code>, <code>MAX_INFLIGHT</code>, <code>SPOOL_THRESHOLD_MB</code>, <code>MAX_CHUNKS_PER_DOC</code></li>
+</ul>
+<h3 id="llm-api">LLM API</h3>
+<ul>
+<li><code>OPENAI_API_KEY</code>, <code>CLAUDE_API_KEY</code>, <code>GEMINI_API_KEY</code></li>
+</ul>
+<h3 id="_11">スケジューラ</h3>
+<ul>
+<li><code>ENABLE_DDB_SCHEDULER</code>, <code>DEFAULT_TZ</code>, <code>RELOAD_INTERVAL_SEC</code>, <code>LEASE_TTL_SEC</code></li>
+<li><code>APS_MAX_WORKERS</code>, <code>EMBED_DEFAULT_WORKERS</code>, <code>SCHEDULER_ID</code></li>
+<li><code>ENABLE_JOB_POOL</code>, <code>JOB_MAX_WORKERS</code></li>
+</ul>
+<h3 id="microsoft-graph-bot">Microsoft Graph / Bot</h3>
+<ul>
+<li><code>TENANT_ID</code>, <code>BOT_APP_ID</code>, <code>BOT_APP_PASSWORD</code></li>
+</ul>
+<h3 id="knowledgeindex">インデックス構築（KnowledgeIndex）</h3>
+<ul>
+<li><code>KI_BUILD_BATCH</code>, <code>KI_LOG_EVERY</code></li>
+</ul>
+<h2 id="_12">ローカル起動</h2>
+<pre><code class="language-bash">python -m venv .venv
+. .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+pip install -r requirements.txt
+
+# .env を用意したうえで
+uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+</code></pre>
+<h2 id="docker">Docker</h2>
+<pre><code class="language-bash">docker build -t knowledge-service:latest .
+docker run --rm -p 8080:8080 knowledge-service:latest
+</code></pre>
+<h2 id="ecr-push">ECR への push（例）</h2>
+<pre><code class="language-bash">aws ecr get-login-password --region ap-northeast-1 | docker login --username AWS --password-stdin 034362039295.dkr.ecr.ap-northeast-1.amazonaws.com
+docker build -t knowledge-service:latest .
+docker tag knowledge-service:latest 034362039295.dkr.ecr.ap-northeast-1.amazonaws.com/knowledge-service:latest
+docker push 034362039295.dkr.ecr.ap-northeast-1.amazonaws.com/knowledge-service:latest
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 - 2040 - Classmethod, Inc.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../assets/version-select.js"></script>
+      
+        <script src="../../../assets/breadcrumbs.js"></script>
+      
+    
+  </body>
+</html>

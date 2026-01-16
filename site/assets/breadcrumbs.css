@@ -1,0 +1,27 @@
+.doc-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #5d6a7c;
+  margin: 0 0 0.75rem;
+}
+
+.doc-breadcrumbs__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.doc-breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
+.doc-breadcrumbs__sep {
+  color: #9aa3b2;
+}
+
+.doc-breadcrumbs__current {
+  color: #2b3648;
+  /* font-weight: 600; */
+}
